@@ -92,7 +92,7 @@ public class LoginActivity extends Activity {
                     getSharedPreferences("vault", MODE_PRIVATE)
                             .edit()
                             .putString("active_key", key)
-                            .putString("expiry", expiry)
+                            .putLong("expiry", expiry)
                             .apply();
                     handler.postDelayed(this::goToMain, 800);
                 } else {
