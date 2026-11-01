@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_root"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_border_gold"
+    android:padding="12dp"
+    android:elevation="12dp">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="#FFD700"
+            android:layout_marginEnd="6dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALPHA  //  OVERLAY"
+                android:textColor="#FFD700"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TACTICAL CONTROL PANEL"
+                android:textColor="#555555"
+                android:textSize="9sp"
+                android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="✕"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/btn_dark"/>
+    </LinearLayout>
+
+    <!-- ACTIVE JOBS + SLOTS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="6dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ACTIVE JOBS"
+            android:textColor="#888888"
+            android:textSize="10sp"
+            android:fontFamily="monospace"/>
+        <TextView
+            android:id="@+id/tv_slots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIVE SLOTS -- / 10"
+            android:textColor="#FFD700"
+            android:textSize="10sp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <!-- SLOT BARS -->
+    <LinearLayout
+        android:id="@+id/ll_slot_bars"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_slot_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> WAITING FOR LIVE SYNC"
+        android:textColor="#555555"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- DATE + ONLINE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="28 Sep 2026"
+            android:textColor="#888888"
+            android:textSize="10sp"
+            android:fontFamily="monospace"/>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="#FFD700"
+            android:layout_marginEnd="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ONLINE"
+            android:textColor="#FFD700"
+            android:textSize="10sp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <!-- TARGET ENDPOINT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TARGET ENDPOINT"
+        android:textColor="#FFD700"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="0dp"
+            android:layout_weight="1.6"
+            android:layout_height="40dp"
+            android:hint="IP Address"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#444444"
+            android:background="@drawable/input_bg"
+            android:textSize="12sp"
+            android:inputType="text"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+
+        <EditText
+            android:id="@+id/et_port"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:hint="Port"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#444444"
+            android:background="@drawable/input_bg"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginStart="6dp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <!-- SESSION DURATION -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SESSION DURATION"
+            android:textColor="#888888"
+            android:textSize="10sp"
+            android:fontFamily="monospace"/>
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200s"
+            android:textColor="#FFD700"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sb_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:progress="200"
+        android:progressTint="#FFD700"
+        android:thumbTint="#FFD700"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- GET IP + VPN BUTTONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <Button
+            android:id="@+id/btn_get_ip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="GET IP"
+            android:background="@drawable/btn_dark"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+        <Button
+            android:id="@+id/btn_vpn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="VPN OFF"
+            android:background="@drawable/btn_dark"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:layout_marginStart="6dp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <!-- LAUNCH BUTTON -->
+    <Button
+        android:id="@+id/btn_launch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="LAUNCH  →"
+        android:background="@drawable/btn_gold"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- ATTACK STATUS -->
+    <TextView
+        android:id="@+id/tv_attack_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> ATTACK SENT [19%]"
+        android:textColor="#00FF88"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:fontFamily="monospace"/>
+
+</LinearLayout>

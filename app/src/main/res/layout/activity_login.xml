@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0D"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+            <View android:layout_width="8dp" android:layout_height="8dp"
+                android:background="#FFD700"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • SECURE GATEWAY  v4.5"
+                android:textColor="#FFD700"
+                android:textSize="11sp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:22"
+                android:textColor="#888888"
+                android:textSize="11sp"
+                android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <!-- LOGO -->
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/alpha_logo"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- KERNEL BADGE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ KERNEL AUTHORIZATION GATE ⚡"
+            android:textColor="#FFD700"
+            android:textSize="11sp"
+            android:background="@drawable/btn_dark"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="monospace"/>
+
+        <!-- ALPHA TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALPHA"
+            android:textColor="#FFD700"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER VIP ACCESS KEY TO UNLOCK"
+            android:textColor="#888888"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- KEY VERIFICATION CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_dark"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <!-- Card Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="TERMINAL  //  KEY VERIFICATION"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIP ACCESS"
+                    android:textColor="#FFD700"
+                    android:textSize="10sp"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+
+            <!-- Key Input Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/input_bg"
+                android:padding="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="■ "
+                    android:textColor="#FFD700"
+                    android:textSize="14sp"
+                    android:paddingStart="8dp"/>
+
+                <EditText
+                    android:id="@+id/et_key"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="44dp"
+                    android:hint="key-NsC9IV33Hcu5Mg"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#444444"
+                    android:background="@null"
+                    android:textSize="13sp"
+                    android:inputType="text"
+                    android:fontFamily="monospace"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_paste"
+                    android:layout_width="72dp"
+                    android:layout_height="44dp"
+                    android:text="PASTE"
+                    android:background="@drawable/btn_gold"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+
+            <!-- Feature Badges -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="✓ 64-BIT HOOKS"
+                    android:textColor="#AAAAAA"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_dark"
+                    android:padding="6dp"
+                    android:fontFamily="monospace"/>
+
+                <View android:layout_width="4dp" android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="✓ MEMORY CLOAK"
+                    android:textColor="#AAAAAA"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_dark"
+                    android:padding="6dp"
+                    android:fontFamily="monospace"/>
+
+                <View android:layout_width="4dp" android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="✓ VIP SERVER"
+                    android:textColor="#AAAAAA"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_dark"
+                    android:padding="6dp"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="LOGIN TO SYSTEM"
+                android:background="@drawable/btn_dark"
+                android:textColor="#555555"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Status text -->
+            <TextView
+                android:id="@+id/tv_connect_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="> Connecting to server..."
+                android:textColor="#FFD700"
+                android:textSize="11sp"
+                android:visibility="gone"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

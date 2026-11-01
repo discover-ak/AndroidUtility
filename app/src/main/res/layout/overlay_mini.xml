@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mini_icon"
+    android:layout_width="52dp"
+    android:layout_height="52dp"
+    android:gravity="center"
+    android:background="@drawable/card_border_gold">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/alpha_logo"/>
+
+</LinearLayout>

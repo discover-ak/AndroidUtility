@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- outer circle gold -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M60,5 A55,55 0 1,1 59.9,5 Z"/>
+    <!-- inner circle black -->
+    <path
+        android:fillColor="#0D0D0D"
+        android:pathData="M60,12 A48,48 0 1,1 59.9,12 Z"/>
+    <!-- A triangle -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M60,25 L85,80 L35,80 Z"/>
+    <!-- inner A cutout -->
+    <path
+        android:fillColor="#0D0D0D"
+        android:pathData="M60,40 L72,70 L48,70 Z"/>
+    <!-- crossbar -->
+    <path
+        android:fillColor="#0D0D0D"
+        android:pathData="M51,62 L69,62 L69,67 L51,67 Z"/>
+    <!-- SERVER text area -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M42,82 L78,82 L78,90 L42,90 Z"/>
+</vector>
