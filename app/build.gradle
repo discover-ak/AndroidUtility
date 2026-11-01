@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.voidddos'
+    namespace 'com.void_ddos'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.voidddos"
+        applicationId "com.void_ddos"
         minSdk 26
         targetSdk 33
         versionCode 1
