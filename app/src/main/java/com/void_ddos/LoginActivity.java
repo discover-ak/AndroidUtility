@@ -19,7 +19,7 @@ import java.util.Locale;
 
 public class LoginActivity extends Activity {
 
-    private static final String C2_URL = "http://YOUR_VPS_IP:8080";
+    private static final String C2_URL = "https://envelope-onto-skill-cap.trycloudflare.com";
     private EditText etKey;
     private Button btnLogin, btnPaste;
     private TextView tvStatus;

